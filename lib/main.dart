@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
               radius: 90,
               backgroundImage: FileImage(image!),
             ): CircleAvatar(
-              radius: 50,
+              radius: 90,
               child: Icon(Icons.person),
             ),
             SizedBox(height: 40,),

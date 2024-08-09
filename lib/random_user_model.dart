@@ -27,8 +27,8 @@ class RandomUser {
 
 class Info {
   String? seed;
-  int? results;
-  int? page;
+  dynamic results;
+  dynamic page;
   String? version;
 
   Info({
@@ -115,7 +115,7 @@ class Result {
 
 class Dob {
   DateTime? date;
-  int? age;
+  dynamic age;
 
   Dob({
     this.date,
@@ -158,7 +158,7 @@ class Location {
   String? city;
   String? state;
   String? country;
-  int? postcode;
+  dynamic postcode;
   Coordinates? coordinates;
   Timezone? timezone;
 
@@ -214,7 +214,7 @@ class Coordinates {
 }
 
 class Street {
-  int? number;
+  dynamic number;
   String? name;
 
   Street({

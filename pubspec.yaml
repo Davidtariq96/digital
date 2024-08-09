@@ -38,6 +38,7 @@ dependencies:
   image_picker:
   location:
   geolocator:
+  dio: ^4.0.6
 
 dev_dependencies:
   flutter_test:
