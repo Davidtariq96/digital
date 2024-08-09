@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:interspec/random_user.dart';
 import 'package:location/location.dart';
 
 void main() {
@@ -140,10 +141,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text(long?? "Access denied",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w300)),
               ],
             ),
-
-            Container(
-              decoration: BoxDecoration(
-
+            SizedBox(height: 20,),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> RandomUserUI()));
+              },
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                child: Text("Please click task 2"),
               ),
             )
           ],
